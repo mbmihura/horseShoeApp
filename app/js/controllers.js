@@ -2,13 +2,37 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
+angular.module('myApp.controllers', [])
+  .controller('StayChartCtrl', [function() {
 
   }])
-  .controller('MyCtrl2', [function() {
+  .controller('StayEditCtrl', [function() {
 
+  }])
+  .controller('ChargesCtrl', [function() {
+
+  }])
+  .controller('MyCtrl1', [function() {
+
+  }])
+  .controller('MyCtrl1', [function() {
+
+  }])
+  .controller('MyCtrl2', ['$scope',function($scope) {
+    $scope.yellow.showCollapsed(true);
   }]);
+
+function CollapseDemoCtrl($scope) {
+  $scope.isCollapsed = false;
+}
+
+function DropdownCtrl($scope) {
+  $scope.items = [
+    "The first choice!",
+    "And another choice for you.",
+    "but wait! A third!"
+  ];
+}
 
 
   function AccordionDemoCtrl($scope) {
