@@ -8,14 +8,16 @@ angular.module('ui.bootstrapAddOns.collapse',['ui.bootstrap.transition'])
       	name: '='
       },
       transclude: true,
-      template: '<div class="collapse" collapse="isExpand" ng-transclude></div>',
+      template: '<div class="collapse" collapse="isCollapse" ng-transclude></div>',
       link: function(scope, element, attrs) {
-        scope.name= {toggleState: function() {
-	        scope.isExpand = !scope.isExpand;
-	      }, showCollapsed: function(show) {
-	        scope.isExpand = !!show;
-	      }
-	    };
+        scope.name = {
+          toggleState: function() {
+  	        scope.isCollapse = !scope.isCollapse;
+  	      }, showExpanded: function(show) {
+  	        scope.isCollapse = !!show;
+  	      }
+  	    };
+        scope.name.showExpanded(true);
       }
     };
   });
