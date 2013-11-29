@@ -1,0 +1,43 @@
+<nav class="sidebar span3" style="margin: 15px;">
+  <ul>
+    <li class="title">Items Group 1</li>
+    <li class="active"><a href="#"><i class="icon-home"></i>Dashboard</a></li>
+    <li class="stick bg-red"><a href="#"><i class="icon-cog"></i>Layouts</a></li>
+    <li class="stick bg-yellow open">
+      <a class="dropdown-toggle" ng-click="yellowSection.toggleState()" href="#"><i class="icon-tree-view"></i>Sub menu</a>
+      <collapsableelement name="yellowSection">
+        <ul class=" " style="display: block;">
+          <li><a href="">Subitem 1</a></li>
+          <li><a href="">Subitem 2</a></li>
+          <li><a href="">Subitem 3</a></li>
+          <li class="divider"></li>
+          <li><a href="">Subitem 4</a></li>
+          <li class="disabled"><a href="">Subitem 4</a></li>
+        </ul>
+      </collapsableelement>
+    </li>
+    <li class="stick bg-green"><a href="#">Thread item</a></li>
+    <li class="disabled"><a href="#">Disabled item</a></li>
+
+    <li class="title">Items Group 2</li>
+    <li><a href="#">Other Item 1</a></li>
+    <li><a href="#">Other item 2</a></li>
+    <li><a href="#">Other item 3</a></li>
+    <li>
+      <a class="dropdown-toggle" ng-click="subMenu.toggleState()" href="#">Sub menu 2</a>
+      <collapsableelement name="subMenu">
+        <ul class="" style="display: block;">
+          <li><a href="">Subitem 1</a></li>
+          <li><a href="">Subitem 2</a></li>
+          <li><a href="">Subitem 3</a></li>
+        </ul>
+      </collapsableelement >
+    </li>
+  </ul>
+</nav>
+
+
+<div class='container-fluid' ng-controller="TypeaheadCtrl">
+    <pre>Model: {{selected| json}}</pre>
+    <input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8">
+</div>
