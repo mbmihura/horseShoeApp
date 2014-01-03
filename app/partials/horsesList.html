@@ -1,44 +1,69 @@
+<h1 style="margin: 15px;">
+    <a href="/"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
+    Caballos
+</h1>
 <div class="panel panel-default" style="margin: 15px;">
-  <div class="panel-heading">Horses</div>
-  <div class="panel-body">
-    Búsqueda: <div class="span3 input-control text">
+  <div class="panel-heading">Búsqueda: <div class="span3 input-control text" style="margin: 0px;">
         <input type="text" />
         <button class="btn-search"></button>
     </div>
+  </div>
+  <div class="panel-body">
     <table class="table striped">
             <thead>
-            <tr>
-                <th class="text-left">Nombre</th>
-                <th class="text-left">Sexo</th>
-                <th class="text-left">Categoria Actual</th>
-                <th class="text-left">Dueños</th>
-                <th class="text-left"></th>
-            </tr>
+              <tr>
+                  <th class="text-left">Nombre</th>
+                  <th class="text-left">Sexo</th>
+                  <th class="text-left">Categoria Actual</th>
+                  <th class="text-left">Dueños</th>
+                  <th class="text-left"></th>
+              </tr>
             </thead>
-
             <tbody>
-            <tr>
-              <td>Bing</td>
-              <td>M</td>
-              <td>Madre con cria al pie</td>
-              <td>Hs. St. Maria, Jorge Cure... mas</td>
-              <td class="right"><a href="#/horses/explorer">Ver</a> - <a href="">Editar</a></td>
-            </tr>
-            <tr>
-              <td>Explorer</td><td>H</td><td class="right">Box</td><td class="right">Hs. Nuevo Mundo</td>
-              <td class="right"><a href="#/horses/explorer">Ver</a> - <a href="">Editar</a></td>
-            </tr>
-            <tr>
-              <td>Chrome Tur</td><td>H</td><td class="right">Madre</td><td class="right">Santiago Bulms</td>
-              <td class="right"><a href="#/horses/explorer">Ver</a> - <a href="">Editar</a></td>
-            </tr>
-            <tr>
-              <td>Good News</td><td>H</td><td class="right">A Servir</td><td class="right">Tomas Melcor</td>
-              <td class="right"><a href="#/horses/explorer">Ver</a> - <a href="">Editar</a></td>
-            </tr>
+              <tr>
+                <td>Bing</td>
+                <td>M</td>
+                <td>Madre con cria al pie</td>
+                <td>Hs. St. Maria, Jorge Cure... mas</td>
+                <td class="right">
+                  <a class="button mini warning" href="#/horses/western/edit">Editar</a> 
+                  <button class="mini danger" href="">Eliminar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Explorer</td>
+                <td>H</td>
+                <td class="right">Box</td>
+                <td class="right">Hs. Nuevo Mundo</td>
+                <td class="right"> 
+                  <a class="button mini warning" href="#/horses/western/edit">Editar</a> 
+                  <button class="mini danger" href="">Eliminar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Chrome Tur</td>
+                <td>H</td>
+                <td class="right">Madre</td>
+                <td class="right">Santiago Bulms</td>
+                <td class="right">
+                  <a class="button mini warning" href="#/horses/western/edit">Editar</a> 
+                  <button class="mini danger" href="">Eliminar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Good News</td>
+                <td>H</td>
+                <td class="right">A Servir</td>
+                <td class="right">Tomas Melcor</td>
+                <td class="right">
+                  <a class="button mini warning" href="#/horses/western/edit">Editar</a> 
+                  <button class="mini danger" href="">Eliminar</button>
+                </td>
+              </tr>
             </tbody>
 
             <tfoot></tfoot> 
         </table>
+        <div><a hef="#/horses/new" class="button info">Nuevo</a></div>
   </div>
 </div>

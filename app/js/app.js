@@ -12,12 +12,17 @@ angular.module('myApp', [
   'ui.bootstrapAddOns.collapse'
 ]).
 config(['$routeProvider', function($routeProvider) {
+
   $routeProvider.when('/horses', {templateUrl: 'partials/horsesList.html', controller: 'MyCtrl2'});
-  $routeProvider.when('/horses/:id', {templateUrl: 'partials/horsesDetails.html', controller: 'MyCtrl2'});
+  $routeProvider.when('/horses/new', {templateUrl: 'partials/horseForm.html', controller: 'MyCtrl2'});
+  $routeProvider.when('/horses/:id', {templateUrl: 'partials/horseDetails.html', controller: 'MyCtrl2'});
+  $routeProvider.when('/horses/:id/edit', {templateUrl: 'partials/horseForm.html', controller: 'MyCtrl2'});
+
   $routeProvider.when('/owners', {templateUrl: 'partials/ownersList.html', controller: 'MyCtrl2'});
   $routeProvider.when('/owners/new', {templateUrl: 'partials/ownerForm.html', controller: 'MyCtrl2'});
   $routeProvider.when('/owners/:id', {templateUrl: 'partials/ownerDetails.html', controller: 'MyCtrl2'});
   $routeProvider.when('/owners/:id/edit', {templateUrl: 'partials/ownerForm.html', controller: 'MyCtrl2'});
+  
   $routeProvider.when('/charges', {templateUrl: 'partials/chargesMenu.html', controller: 'MyCtrl2'});
   $routeProvider.when('/charges/new', {templateUrl: 'partials/selectHorseControl.html', controller: 'MyCtrl2'});
   $routeProvider.when('/charges/new2', {templateUrl: 'partials/newChargeProperties.html', controller: 'MyCtrl2'});
